@@ -1,6 +1,5 @@
 import React from 'react';
 import './ContentSidebar.css';
-import { Divider, Typography } from '@mui/material';
 
 import topDonators from '../../../../assets/topdonators.png';
 import RainbowDivider from '../../../../components/RainbowDivider/RainbowDivider.tsx';
