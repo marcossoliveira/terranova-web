@@ -1,7 +1,6 @@
 import React from 'react';
 import './ServersSection.css';
 
-import bg from '../../../../assets/bgs/bg9.jpeg';
 import title from '../../../../assets/servers-title.png';
 import minigames from '../../../../assets/minigames.png';
 import nebula from '../../../../assets/nebula.png';
