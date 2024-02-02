@@ -9,4 +9,5 @@
 
 .content-card-title-img {
     object-fit: contain;
+    width: 100%;
 }
