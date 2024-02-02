@@ -1,0 +1,5 @@
+.rainbow-divider {
+    margin: 8px 0;
+    height: 2px;
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+}

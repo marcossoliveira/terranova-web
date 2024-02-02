@@ -1,0 +1,6 @@
+.menu-container {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #6e86ff, #2740cb, #a16bff);
+    padding: 24px 8px;
+}

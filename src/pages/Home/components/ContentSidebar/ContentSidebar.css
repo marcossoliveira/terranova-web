@@ -1,0 +1,12 @@
+.content-card-wrap {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 16px;
+    border-radius: 8px;
+    color: white;
+}
+
+.content-card-title-img {
+    object-fit: contain;
+}
