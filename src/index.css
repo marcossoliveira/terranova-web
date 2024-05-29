@@ -2,3 +2,30 @@ body {
     margin: 0;
     font-family: Roboto, sans-serif, Helvetica;
 }
+
+.markdown code {
+    background-color: #c6c6c650;
+    padding: 2px 4px;
+    border-radius: 7px;
+}
+
+.markdown img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.markdown a {
+    color: #6e86ff;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.markdown a:hover {
+    color: #a16bff;
+}
+
+.markdown a:visited {
+    color: #6e86ff;
+    text-decoration: none;
+    transition: color 1s;
+}

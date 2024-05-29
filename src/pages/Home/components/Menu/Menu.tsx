@@ -3,45 +3,44 @@ import { Container, Grid } from '@mui/material';
 import './Menu.css';
 import CustomButton from '../CustomButton/CustomButton.tsx';
 import { Map, Store, TrendingUp, WbTwilight } from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom';
 
 const buttons = [
   {
     icon: <WbTwilight />,
     text: 'Wiki',
-    fn: () => {
-      console.log('aaa');
-    },
+    route: '/wiki',
   },
   {
     icon: <Map />,
     text: 'Mapa',
-    fn: () => {
-      console.log('aaa');
-    },
+    route: '',
   },
   {
     icon: <Store />,
     text: 'Lojas (Em breve)',
-    fn: () => {
-      console.log('aaa');
-    },
+    route: '',
   },
   {
     icon: <TrendingUp />,
     text: 'Rankings (Em breve)',
-    fn: () => {
-      console.log('aaa');
-    },
+    route: '',
   },
 ];
 const Menu: React.FC = () => {
+  const router = useNavigate();
+
   return (
     <div className="menu-container">
       <Container>
         <Grid container>
           {buttons.map((item) => (
             <Grid item lg={3} xs={12} key={item.text}>
-              <CustomButton icon={item.icon} text={item.text} fn={item.fn} />
+              <CustomButton
+                icon={item.icon}
+                text={item.text}
+                fn={() => router(item.route)}
+              />
             </Grid>
           ))}
         </Grid>
