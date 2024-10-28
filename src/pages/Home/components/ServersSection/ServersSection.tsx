@@ -2,10 +2,11 @@ import React from 'react';
 import './ServersSection.css';
 
 import title from '../../../../assets/servers-title.png';
-import minigames from '../../../../assets/minigames.png';
-import nebula from '../../../../assets/nebula.png';
-import elysium from '../../../../assets/elysium.png';
-import { Button, Container, Divider, Grid } from '@mui/material';
+import miniGameLogo from '../../../../assets/minigames.png';
+import plotLogo from '../../../../assets/criativo-logo.png';
+import solarLogo from '../../../../assets/solar-logo.png';
+import avalonLogo from '../../../../assets/avalon-logo.png';
+import { Container, Divider, Grid } from '@mui/material';
 
 interface ServerCardProps {
   image: string;
@@ -27,7 +28,7 @@ const ServersSection: React.FC = () => {
           </span>
         ))}
         <Divider color="#a1a1a1" variant="middle" />
-        <Button>Saiba mais</Button>
+        {/*<Button>Saiba mais</Button>*/}
       </div>
     );
   };
@@ -38,23 +39,9 @@ const ServersSection: React.FC = () => {
         <div className="servers-section-container">
           <img className="servers-title-img" src={title} alt="Servers-Title" />
           <Grid container spacing={3}>
-            <Grid item lg={4} sm={6} xs={12}>
+            <Grid item lg={6} sm={6} xs={12}>
               {serverCard({
-                image: minigames,
-                description: 'Servidor de jogos e plots criativos',
-                attrs: [
-                  'Plots',
-                  'MurderMystery',
-                  'BedWars',
-                  'Parkour',
-                  'Futebol',
-                ],
-                slug: 'minigames',
-              })}
-            </Grid>
-            <Grid item lg={4} sm={6} xs={12}>
-              {serverCard({
-                image: elysium,
+                image: avalonLogo,
                 description: 'Servidor survival',
                 attrs: [
                   'Economia',
@@ -67,12 +54,38 @@ const ServersSection: React.FC = () => {
                 slug: 'elysium',
               })}
             </Grid>
-            <Grid item lg={4} sm={6} xs={12}>
+            <Grid item lg={6} sm={6} xs={12}>
               {serverCard({
-                image: nebula,
+                image: solarLogo,
                 description: 'Servidor RPG',
-                attrs: ['Mundo RP', 'mcMMO', 'Terrenos', 'Missões'],
+                attrs: ['Mundo RP', 'mcMMO', 'Terrenos', 'Missões', 'PvP', 'Crie sua história'],
                 slug: 'elysium',
+              })}
+            </Grid>
+            <Grid item lg={6} sm={6} xs={12}>
+              {serverCard({
+                image: miniGameLogo,
+                description: 'Servidor de jogos',
+                attrs: [
+                  'MurderMystery',
+                  'BedWars',
+                  'Parkour',
+                  'Futebol',
+                ],
+                slug: 'minigames',
+              })}
+            </Grid>
+            <Grid item lg={6} sm={6} xs={12}>
+              {serverCard({
+                image: plotLogo,
+                description: 'Servidor de plots criativos',
+                attrs: [
+                  'WorldEdit',
+                  'Terrenos',
+                  'Eventos',
+                  'Colaborativo',
+                ],
+                slug: 'minigames',
               })}
             </Grid>
           </Grid>

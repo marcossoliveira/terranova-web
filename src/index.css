@@ -3,6 +3,11 @@ body {
     font-family: Roboto, sans-serif, Helvetica;
 }
 
+@font-face {
+    font-family: 'Minecraft-Font';
+    src: url('./assets/fonts/F77MinecraftRegular-0VYv.ttf') format('truetype');
+}
+
 .markdown code {
     background-color: #c6c6c650;
     padding: 2px 4px;

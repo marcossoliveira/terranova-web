@@ -1,0 +1,152 @@
+.rankings-section-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url("../../../../assets/bgs/bg7.jpeg");
+    background-size: cover;
+    padding: 32px 0;
+}
+
+.rankings-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ranking-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.ranking-title-container span {
+    font-family: 'Minecraft-Font', sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+.rankings-title-img {
+    width: 30%;
+    object-fit: contain;
+}
+
+.player-list-wrap {
+    margin-top: 2rem;
+}
+
+.rank-line {
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    font-size: 0.8rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-family: 'Minecraft-Font', sans-serif;
+
+}
+
+.top-1 {
+    background-color: rgba(255, 215, 0, .5);
+    font-weight: bold;
+    border-radius: 20px;
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.top-2 {
+    background-color: rgba(192, 192, 192, .5);
+    font-weight: bold;
+    border-radius: 20px;
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.top-3 {
+    background-color: rgba(139, 69, 19, .5);
+    font-weight: bold;
+    border-radius: 20px;
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+.rankings-card {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #1D267155, rgba(186, 55, 195, 0.33));
+    padding: 32px;
+    border-radius: 16px;
+    margin: 8px 16px;
+    backdrop-filter: blur(5px);
+    transition: transform .8s !important;
+}
+
+.rankings-card:hover {
+    transform: scale(1.1);
+}
+
+.rankings-card-img {
+    height: 7vh;
+    object-fit: contain;
+}
+
+.rankings-card-description {
+    font-weight: bold;
+    font-size: 1.7vh;
+    text-align: center;
+    color: #ffffff;
+    padding: 8px 0;
+}
+
+.rankings-card-attrs {
+    font-weight: normal;
+    font-size: 1.5vh;
+    text-align: center;
+    color: #c6c6c6;
+    padding: 4px 0;
+}
+
+.medal-icon {
+    width: 100%;
+}
+
+.rank-player-head {
+    object-fit: contain;
+    width: 100%;
+}
+
+.rank-line-value {
+    display: flex;
+    justify-content: end;
+}
+
+.rank-line-position {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.rank-title {
+    text-align: center;
+    font-family: 'Minecraft-Font', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+
+}
+
+.rank-description {
+    text-align: center;
+    color: #a1a2a3;
+    font-family: 'Minecraft-Font', sans-serif;
+    font-size: 0.8rem;
+}

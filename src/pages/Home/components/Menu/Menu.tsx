@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Grid } from '@mui/material';
 import './Menu.css';
 import CustomButton from '../CustomButton/CustomButton.tsx';
-import { Map, Store, TrendingUp, WbTwilight } from '@mui/icons-material';
+import { Dashboard, Store, TrendingUp, WbTwilight } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 
 const buttons = [
@@ -12,8 +12,8 @@ const buttons = [
     route: '/wiki',
   },
   {
-    icon: <Map />,
-    text: 'Mapa',
+    icon: <Dashboard />,
+    text: 'Painel',
     route: '',
   },
   {
@@ -23,8 +23,8 @@ const buttons = [
   },
   {
     icon: <TrendingUp />,
-    text: 'Rankings (Em breve)',
-    route: '',
+    text: 'Rankings',
+    route: '#rankings',
   },
 ];
 const Menu: React.FC = () => {
@@ -39,7 +39,16 @@ const Menu: React.FC = () => {
               <CustomButton
                 icon={item.icon}
                 text={item.text}
-                fn={() => router(item.route)}
+                fn={() => {
+                  if (item.route.startsWith('#')) {
+                    const element = document.querySelector(item.route);
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  } else {
+                    router(item.route);
+                  }
+                }}
               />
             </Grid>
           ))}
