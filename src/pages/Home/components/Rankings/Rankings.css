@@ -48,7 +48,12 @@
     padding-left: 0.8rem;
     padding-right: 0.8rem;
     font-family: 'Minecraft-Font', sans-serif;
+}
 
+@media (max-width: 600px) {
+    .rank-line {
+        font-size: 0.6rem;
+    }
 }
 
 .top-1 {
@@ -126,15 +131,17 @@
 
 .rank-line-value {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .rank-line-position {
     display: flex;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bolder;
 }
+
+
 
 .rank-title {
     text-align: center;
