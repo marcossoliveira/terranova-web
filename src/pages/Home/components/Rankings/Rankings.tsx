@@ -179,7 +179,9 @@ const RankingSection: React.FC = () => {
                             className="rank-line-position"
                           >
                             {index != 0 && index != 1 && index != 2 && (
-                              <span>{index + 1} º</span>
+                              <span>
+                                {index + 1} <small>º</small>
+                              </span>
                             )}
                             {index == 0 && (
                               <img
