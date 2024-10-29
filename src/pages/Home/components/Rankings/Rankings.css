@@ -50,11 +50,7 @@
     font-family: 'Minecraft-Font', sans-serif;
 }
 
-@media (max-width: 600px) {
-    .rank-line {
-        font-size: 0.6rem;
-    }
-}
+
 
 .top-1 {
     background-color: rgba(255, 215, 0, .5);
@@ -156,4 +152,13 @@
     color: #a1a2a3;
     font-family: 'Minecraft-Font', sans-serif;
     font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+    .rank-line {
+        font-size: 0.6rem;
+    }
+    .rank-line-position {
+        font-size: 0.5rem;
+    }
 }

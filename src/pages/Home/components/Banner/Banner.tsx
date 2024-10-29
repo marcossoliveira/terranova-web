@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, IconButton, Button } from '@mui/material';
+import { Container, Grid, Button } from '@mui/material';
 import './Banner.css';
 
 import bg1 from '../../../../assets/bgs/bg1.jpeg';
@@ -12,7 +12,6 @@ import logo from '../../../../assets/logo.png';
 import mine from '../../../../assets/mine-white-icon.png';
 import discord from '../../../../assets/discord-white-icon.png';
 import { useCopyToClipboard } from '../../../../hooks/useCopyToClipboard.ts';
-import { ContentCopy } from '@mui/icons-material';
 import { Bounce, toast } from 'react-toastify';
 
 const bgs = [bg1, bg2, bg3, bg4, bg5, bg6];
@@ -59,9 +58,9 @@ const Banner: React.FC = () => {
         <span>play.redetn.com</span>
         <span>Porta bedrock: 25710</span>
       </div>
-      <IconButton color="info">
-        <ContentCopy />
-      </IconButton>
+      {/*<IconButton color="info">*/}
+      {/*  <ContentCopy />*/}
+      {/*</IconButton>*/}
     </div>
   );
 
@@ -82,7 +81,7 @@ const Banner: React.FC = () => {
       <img className="image" src={bgs[index]} alt={'Banner Image ' + index} />
       <Container className="content">
         <img src={logo} alt="Logo TN" className="logo" />
-        <Grid container xl>
+        <Grid container xl paddingBottom={8}>
           <Grid item lg={6} xs={12}>
             {mineSmallBanner}
           </Grid>
