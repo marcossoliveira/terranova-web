@@ -1,12 +1,15 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000',
+  baseURL: import.meta.env.VITE_BASE_URL,
   timeout: 10000,
-  headers: { 'Content-Type': 'application/json' }
+  headers: { 'Content-Type': 'application/json' },
 });
 
-export const getData = async (endpoint: string, params?: {[key: string]: any}) => {
+export const getData = async (
+  endpoint: string,
+  params?: { [key: string]: any },
+) => {
   try {
     const response = await api.get(endpoint, { params });
     return response.data;
@@ -16,7 +19,10 @@ export const getData = async (endpoint: string, params?: {[key: string]: any}) =
   }
 };
 
-export const postData = async (endpoint: string, data: {[key: string]: any}) => {
+export const postData = async (
+  endpoint: string,
+  data: { [key: string]: any },
+) => {
   try {
     const response = await api.post(endpoint, data);
     return response.data;
@@ -26,7 +32,10 @@ export const postData = async (endpoint: string, data: {[key: string]: any}) => 
   }
 };
 
-export const patchData = async (endpoint: string, data: {[key: string]: any}) => {
+export const patchData = async (
+  endpoint: string,
+  data: { [key: string]: any },
+) => {
   try {
     const response = await api.patch(endpoint, data);
     return response.data;
@@ -36,7 +45,10 @@ export const patchData = async (endpoint: string, data: {[key: string]: any}) =>
   }
 };
 
-export const putData = async (endpoint: string, data: {[key: string]: any}) => {
+export const putData = async (
+  endpoint: string,
+  data: { [key: string]: any },
+) => {
   try {
     const response = await api.put(endpoint, data);
     return response.data;
