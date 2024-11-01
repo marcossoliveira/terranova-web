@@ -12,26 +12,20 @@ import {
   Button,
   CircularProgress,
   Dialog,
-  DialogActions,
   DialogContent,
   Divider,
   Grid,
   IconButton,
-  ImageListItem,
   List,
   ListItem,
   ListItemAvatar,
-  ListItemButton,
-  ListItemSecondaryAction,
   ListItemText,
-  MenuItem,
   Slide,
-  TextareaAutosize,
   TextField,
   Toolbar,
   Typography,
 } from '@mui/material';
-import { Close, Spa } from '@mui/icons-material';
+import { Close } from '@mui/icons-material';
 import { useWindowSize } from '@uidotdev/usehooks';
 import { uploadImage } from '../../../../services/firebase/storage-service';
 import { UserPayload } from '../../../../services/api/auth-service';
@@ -224,7 +218,7 @@ export function ViewTicket({
                   (item: string, index: number) => (
                     <img
                       src={item}
-                      key={'item + index'}
+                      key={item + index.toString()}
                       alt="Attachment"
                       style={{
                         width: '100%',
@@ -290,7 +284,7 @@ export function ViewTicket({
                                 ? `${comment.username} (${comment.userType})`
                                 : comment.player}
                             </Typography>
-                            {' - '} 
+                            {' - '}
                             <Typography
                               component="span"
                               variant="body2"

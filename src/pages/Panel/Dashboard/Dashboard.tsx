@@ -1,4 +1,4 @@
-import { SetStateAction, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Dashboard.css';
 import {
   Container,
@@ -19,9 +19,7 @@ import {
   Divider,
   Button,
   CardHeader,
-  CardActionArea,
   CardActions,
-  Icon,
   Tooltip,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -31,13 +29,11 @@ import { getData } from '../../../services/api/api-service';
 import { ThemeOptions } from '../../../constants';
 import {
   Add,
-  AirplaneTicket,
   CardGiftcard,
   DarkMode,
   DocumentScannerTwoTone,
   ExitToApp,
   LightMode,
-  People,
   Support,
   Warning,
   WhatsApp,

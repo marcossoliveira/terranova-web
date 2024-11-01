@@ -4,10 +4,6 @@ import {
   CssBaseline,
   Button,
   TextField,
-  FormControlLabel,
-  Checkbox,
-  Link,
-  Grid,
   Box,
   Typography,
 } from '@mui/material';
@@ -43,7 +39,7 @@ function Login() {
     const data = new FormData(event.currentTarget);
 
     if (data.get('user') === '' || data.get('password') === '') {
-      alert('Preencha todos os campos');
+      toast.error('Preencha todos os campos');
       return;
     }
 
@@ -61,7 +57,7 @@ function Login() {
       // Handle successful login here, e.g., redirect to another page or show a success message
     } catch (error) {
       // Handle login error here, e.g., show an error message
-      alert('Erro ao fazer login. Por favor, tente novamente.');
+      toast.error('Erro ao fazer login. Por favor, tente novamente.');
     } finally {
       loading = false;
     }
