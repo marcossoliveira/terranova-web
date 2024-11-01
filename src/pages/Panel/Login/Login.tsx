@@ -32,8 +32,6 @@ function Login() {
     }
   }, [router]);
 
-  let loading = false;
-
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -43,7 +41,6 @@ function Login() {
       return;
     }
 
-    loading = true;
     try {
       const result = await login(
         data.get('user') as string,
@@ -59,7 +56,6 @@ function Login() {
       // Handle login error here, e.g., show an error message
       toast.error('Erro ao fazer login. Por favor, tente novamente.');
     } finally {
-      loading = false;
     }
   };
 
