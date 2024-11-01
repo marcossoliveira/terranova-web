@@ -56,7 +56,7 @@ const Wiki: React.FC = () => {
         setState(StateEnum.DEFAULT);
       })
       .catch((error) => {
-        console.log(error);
+        console.error(error);
         setState(StateEnum.ERROR);
       });
   }, []);

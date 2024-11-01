@@ -1,4 +1,4 @@
-import { getData, getDataById } from '../../services/firestore-service.ts';
+import { getData, getDataById } from '../../services/firebase/firestore-service.ts';
 
 export const getArticle = async (docId: string) => {
   return await getDataById('article', docId);

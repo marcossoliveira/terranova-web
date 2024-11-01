@@ -1,0 +1,101 @@
+.styled-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+  background: linear-gradient(to right, green, orange);
+}
+
+.ranking-title {
+  display: flex;
+  align-items: center;
+}
+
+.icon-title {
+    margin-right: 0.5rem;
+    color: #a6a7a8;
+}
+
+.container-wrap {
+  margin-top: 100px;
+}
+
+.welcome-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Minecraft-Font', sans-serif;
+}
+
+.welcome-wrap img {
+  margin-right: 1rem;
+}
+
+.welcome-display-name {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.welcome-message {
+  color: #a6a7a8;
+}
+
+.ranking-wrap {
+  margin-top: 2rem;
+}
+
+.rank-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 165, 0, 0.5),
+    rgba(0, 128, 0, 0.5)
+  );
+  border-radius: 10px;
+}
+
+.top_1 {
+  background: linear-gradient(to right, #ffd700, #ffcc00);
+  margin-bottom: 0.5rem;
+}
+
+.top_2 {
+  background: linear-gradient(to right, silver, gray);
+  margin-bottom: 0.5rem;
+}
+
+.top_3 {
+  background: linear-gradient(to right, #cd7f32, #b87333);
+  margin-bottom: 0.5rem;
+}
+
+.no_top {
+  background: linear-gradient(to right, #f0f0, #d9d9d9);
+  color: #000 !important;
+  margin-bottom: 0.5rem;
+}
+
+.button-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ticket-item {
+border: 2px solid orange;
+}
+
+.img-card {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}

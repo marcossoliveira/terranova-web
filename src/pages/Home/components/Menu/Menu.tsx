@@ -14,7 +14,7 @@ const buttons = [
   {
     icon: <Dashboard />,
     text: 'Painel',
-    route: '',
+    route: '/painel/login',
   },
   {
     icon: <Store />,
